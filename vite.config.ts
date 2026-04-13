@@ -8,6 +8,7 @@ import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 
 const config = defineConfig({
+	base: "/eso-crafting-researcher/",
 	resolve: {
 		alias: {
 			"@": fileURLToPath(new URL("./src", import.meta.url)),
@@ -15,7 +16,10 @@ const config = defineConfig({
 	},
 	plugins: [
 		devtools(),
-		nitro({ rollupConfig: { external: [/^@sentry\//] } }),
+		nitro({
+			prerender: { crawlLinks: true, routes: ["/"] },
+			rollupConfig: { external: [/^@sentry\//] },
+		}),
 		tsconfigPaths({ projects: ["./tsconfig.json"] }),
 		tailwindcss(),
 		tanstackStart(),
