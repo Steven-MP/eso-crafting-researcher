@@ -9,10 +9,10 @@ A browser-based tracker for monitoring trait research progress across all crafti
 - Track researched traits for all three crafting disciplines: **Clothing**, **Blacksmithing**, and **Woodworking**
 - Three-state trait tracking: unchecked, **ready** (in progress), and **done** (researched)
 - Per-discipline progress bar with colour-coded segments:
-  - Green — researched
-  - Blue — ready
-  - Red — Nirnhoned (not yet researched)
-  - Grey — other traits not yet researched
+  - <span style="color:#1A7339">**Green**</span> — Researched
+  - <span style="color:#0F6FA7">**Blue**</span> — Ready
+  - <span style="color:#B91C1C">**Red**</span> — Nirnhoned (not yet researched)
+  - <span style="color:#6B7280">**Grey**</span> — Other traits not yet researched
 - Progress badge per item showing researched trait count
 - Progress persisted to `localStorage` — survives page refreshes with no account required
 
