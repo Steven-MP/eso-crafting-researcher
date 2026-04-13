@@ -8,13 +8,16 @@ interface ProgressBadgeProps {
 
 export function ProgressBadge({ count, total, className }: ProgressBadgeProps) {
 	const complete = count === total;
+	const almostComplete = count === total - 1;
 	return (
 		<span
 			className={cn(
 				"text-xs tabular-nums",
 				complete
 					? "text-green-600 dark:text-green-400 font-medium"
-					: "text-muted-foreground",
+					: almostComplete
+						? "text-blue-600 dark:text-blue-400 font-medium"
+						: "text-muted-foreground",
 				className,
 			)}
 		>
