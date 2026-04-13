@@ -21,7 +21,7 @@ export function CategorySection({
 
 	return (
 		<div className="mb-6">
-			<h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-2">
+			<h3 className="text-sm font-semibold text-(--heading-color) uppercase tracking-wider mb-2">
 				{category.name}
 			</h3>
 			<div className="rounded-md border border-border bg-card">
