@@ -24,8 +24,8 @@ export function CategorySection({
 			<h3 className="text-sm font-semibold text-(--heading-color) uppercase tracking-wider mb-2">
 				{category.name}
 			</h3>
-			<div className="rounded-md border border-border bg-card">
-				<div className="grid grid-cols-[minmax(100px,1fr)_repeat(9,32px)_36px] items-center gap-x-1 px-3 py-1.5 border-b border-border bg-muted/50 rounded-t-md">
+			<div className="rounded-md border border-(--heading-color) bg-card">
+				<div className="grid grid-cols-[minmax(100px,1fr)_repeat(9,32px)_36px] items-center gap-x-1 px-3 py-1.5 border-b border-(--heading-color) bg-muted/50 rounded-t-md">
 					<span className="text-xs font-medium text-muted-foreground">
 						Item
 					</span>
