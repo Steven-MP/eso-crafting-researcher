@@ -1,5 +1,7 @@
 # ESO Crafting Researcher
 
+![ESO Crafting Researcher](public/android-chrome-512x512.png)
+
 A browser-based tracker for monitoring trait research progress across all crafting disciplines in *The Elder Scrolls Online*.
 
 ## Features
