@@ -23,6 +23,7 @@ A browser-based tracker for monitoring trait research progress across all crafti
 - [Tailwind CSS v4](https://tailwindcss.com/) + [shadcn/ui](https://ui.shadcn.com/) components
 - [Vite](https://vitejs.dev/) bundler
 - [Biome](https://biomejs.dev/) for linting and formatting
+- [Bun test](https://bun.sh/docs/cli/test) + [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) for tests
 
 ## Getting Started
 
@@ -39,5 +40,7 @@ The app runs at [http://localhost:3003](http://localhost:3003) by default.
 |---------|-------------|
 | `bun run build` | Production build |
 | `bun run preview` | Preview production build |
+| `bun run test` | Run tests |
+| `bun run test:coverage` | Run tests with coverage |
 | `bun run lint` | Lint with Biome |
 | `bun run check` | Full Biome check |
