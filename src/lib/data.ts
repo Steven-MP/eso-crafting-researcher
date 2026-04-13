@@ -57,8 +57,7 @@ export const DISCIPLINES: readonly DisciplineDef[] = [
 				id: "light-armour",
 				name: "Light Armour",
 				items: [
-					{ id: "robe", name: "Robe", traitType: "armour" },
-					{ id: "jerkin", name: "Jerkin", traitType: "armour" },
+					{ id: "robe", name: "Robe & Jerkin", traitType: "armour" },
 					{ id: "shoes", name: "Shoes", traitType: "armour" },
 					{ id: "gloves", name: "Gloves", traitType: "armour" },
 					{ id: "hat", name: "Hat", traitType: "armour" },
