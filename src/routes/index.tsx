@@ -19,8 +19,11 @@ function ResearchPage() {
 					<RiPencilRuler2Line className="size-7 shrink-0" />
 					ESO Crafting Researcher
 				</h1>
-				<p className="text-sm text-muted-foreground mb-6">
+				<p className="text-sm text-muted-foreground">
 					Track your trait research progress across all crafting disciplines.
+				</p>
+				<p className="text-sm text-muted-foreground mb-6">
+					The app saves your research progress locally in your browser, no account required.
 				</p>
 				<Tabs defaultValue={DISCIPLINES[0].id}>
 					<TabsList className="mb-2">
