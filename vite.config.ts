@@ -17,7 +17,6 @@ const config = defineConfig({
 	plugins: [
 		devtools(),
 		nitro({
-			prerender: { crawlLinks: true, routes: ["/"] },
 			rollupConfig: { external: [/^@sentry\//] },
 		}),
 		tsconfigPaths({ projects: ["./tsconfig.json"] }),
