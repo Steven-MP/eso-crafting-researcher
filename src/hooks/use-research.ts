@@ -30,5 +30,15 @@ export function useResearch() {
 		});
 	}
 
-	return { researched, toggle };
+	function replaceAll(data: Record<string, unknown>) {
+		const validated = new Map<string, TraitState>(
+			Object.entries(data)
+				.filter(([, v]) => v === "ready" || v === "done")
+				.map(([k, v]) => [k, v as TraitState]),
+		);
+		saveResearched(validated);
+		setResearched(validated);
+	}
+
+	return { researched, toggle, replaceAll };
 }

@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { RiPencilRuler2Line } from "@remixicon/react";
 import { DisciplineTab } from "@/components/DisciplineTab";
+import { StorageManager } from "@/components/StorageManager";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useResearch } from "@/hooks/use-research";
 import { DISCIPLINES } from "@/lib/data";
@@ -10,15 +11,18 @@ export const Route = createFileRoute("/")({
 });
 
 function ResearchPage() {
-	const { researched, toggle } = useResearch();
+	const { researched, toggle, replaceAll } = useResearch();
 
 	return (
 		<div className="min-h-screen bg-background">
 			<div className="max-w-4xl mx-auto px-4 py-8">
-				<h1 className="text-2xl font-bold mb-1 flex items-center gap-2">
-					<RiPencilRuler2Line className="size-7 shrink-0" />
-					ESO Crafting Researcher
-				</h1>
+				<div className="flex items-start justify-between mb-1">
+					<h1 className="text-2xl font-bold flex items-center gap-2">
+						<RiPencilRuler2Line className="size-7 shrink-0" />
+						ESO Crafting Researcher
+					</h1>
+					<StorageManager onImport={replaceAll} />
+				</div>
 				<p className="text-sm text-muted-foreground">
 					Track your trait research progress across all crafting disciplines.
 				</p>
